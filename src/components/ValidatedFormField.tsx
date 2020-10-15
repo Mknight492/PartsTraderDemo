@@ -1,5 +1,4 @@
 import React from "react";
-import { __String } from "typescript";
 import { IValidationRule } from "../utilities/regularExpressions/ValidatePartNumber.Regex";
 import { ValidationRule } from "./ValidationRule";
 
@@ -29,6 +28,7 @@ export function ValidatedFormField<
       </div>
       {validations.map(({ validationFunction, validationDescription }) => (
         <ValidationRule
+          key={validationDescription}
           validationFunction={validationFunction}
           value={value}
           message={validationDescription}

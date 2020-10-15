@@ -24,8 +24,8 @@ export const PartsList = ({ partNumber }: { partNumber: string }) => {
       <div>
         {list ? (
           list.map((el) => (
-            <div style={{ margin: 10 }}>
-              <div key={el.id}> Part Id: {el.id} </div>
+            <div style={{ margin: 10 }} key={el.id}>
+              <div> Part Id: {el.id} </div>
               <div>Part Price: {el.cost}</div>
             </div>
           ))
