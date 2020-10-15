@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/PartsTraderDemo/static/css/main.61788106.chunk.css",
+    "main.js": "/PartsTraderDemo/static/js/main.69cecfc6.chunk.js",
+    "main.js.map": "/PartsTraderDemo/static/js/main.69cecfc6.chunk.js.map",
+    "runtime-main.js": "/PartsTraderDemo/static/js/runtime-main.ab1f721e.js",
+    "runtime-main.js.map": "/PartsTraderDemo/static/js/runtime-main.ab1f721e.js.map",
+    "static/js/2.99c24b8a.chunk.js": "/PartsTraderDemo/static/js/2.99c24b8a.chunk.js",
+    "static/js/2.99c24b8a.chunk.js.map": "/PartsTraderDemo/static/js/2.99c24b8a.chunk.js.map",
+    "index.html": "/PartsTraderDemo/index.html",
+    "precache-manifest.4c45446f2a598c7bf7a300ba1b70e5ad.js": "/PartsTraderDemo/precache-manifest.4c45446f2a598c7bf7a300ba1b70e5ad.js",
+    "service-worker.js": "/PartsTraderDemo/service-worker.js",
+    "static/css/main.61788106.chunk.css.map": "/PartsTraderDemo/static/css/main.61788106.chunk.css.map",
+    "static/js/2.99c24b8a.chunk.js.LICENSE.txt": "/PartsTraderDemo/static/js/2.99c24b8a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab1f721e.js",
+    "static/js/2.99c24b8a.chunk.js",
+    "static/css/main.61788106.chunk.css",
+    "static/js/main.69cecfc6.chunk.js"
+  ]
+}
