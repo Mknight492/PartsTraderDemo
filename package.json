@@ -1,5 +1,6 @@
 {
   "name": "parts-trader",
+  "homepage": "http://Mknight492.github.io/PartsTraderDemo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,17 +11,24 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.52",
     "@types/react-dom": "^16.9.0",
+    "faker": "^5.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
+    "styled-components": "^5.2.0",
     "typescript": "~3.7.2",
-    "use-debounce": "^5.0.1"
+    "use-debounce": "^5.0.1",
+    "uuid": "^8.3.1"
   },
   "scripts": {
     "start": "react-scripts start --resolveJsonModule=true",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build npm run build-storybook",
+    "test": "react-scripts test --resolveJsonModule=true",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -o ./build/storybook -s public ",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,5 +44,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.0",
+    "@storybook/addon-essentials": "^6.0.26",
+    "@storybook/addon-links": "^6.0.26",
+    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/react": "^6.0.26",
+    "babel-loader": "^8.1.0",
+    "gh-pages": "^3.1.0",
+    "storybook": "^6.0.26"
   }
 }

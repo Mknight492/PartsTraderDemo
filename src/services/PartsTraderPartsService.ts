@@ -1,4 +1,4 @@
-import { uuid } from "uuidv4";
+import { v4 } from "uuid";
 import faker from "faker";
 
 //there was mention of an IPartsTraderPartsService in the email
@@ -13,9 +13,9 @@ export const PartsTraderPartsService = {
     new Promise((resolve, _reject) => {
       setTimeout(() => {
         resolve([
-          { id: uuid(), cost: faker.commerce.price() },
-          { id: uuid(), cost: faker.commerce.price() },
-          { id: uuid(), cost: faker.commerce.price() },
+          { id: v4(), cost: faker.commerce.price() },
+          { id: v4(), cost: faker.commerce.price() },
+          { id: v4(), cost: faker.commerce.price() },
         ]);
       }, 1000);
     }),

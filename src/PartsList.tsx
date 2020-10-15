@@ -19,12 +19,20 @@ export const PartsList = ({ partNumber }: { partNumber: string }) => {
   }
 
   return (
-    <div>
-      {list ? (
-        list.map((el) => <div key={el.id}> x</div>)
-      ) : (
-        <div> Loading </div>
-      )}
-    </div>
+    <>
+      <h3>Available Parts:</h3>
+      <div>
+        {list ? (
+          list.map((el) => (
+            <div style={{ margin: 10 }} key={el.id}>
+              <div> Part Id: {el.id} </div>
+              <div>Part Price: {el.cost}</div>
+            </div>
+          ))
+        ) : (
+          <div> Loading </div>
+        )}
+      </div>
+    </>
   );
 };

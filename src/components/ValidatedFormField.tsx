@@ -1,9 +1,10 @@
 import React from "react";
-import { __String } from "typescript";
 import { IValidationRule } from "../utilities/regularExpressions/ValidatePartNumber.Regex";
 import { ValidationRule } from "./ValidationRule";
 
-type IValidateFormFieldProps<T extends string | number | readonly string[]> = {
+export type IValidateFormFieldProps<
+  T extends string | number | readonly string[]
+> = {
   value: T;
   id: string;
   setValue: (value) => void;
@@ -29,6 +30,7 @@ export function ValidatedFormField<
       </div>
       {validations.map(({ validationFunction, validationDescription }) => (
         <ValidationRule
+          key={validationDescription}
           validationFunction={validationFunction}
           value={value}
           message={validationDescription}
