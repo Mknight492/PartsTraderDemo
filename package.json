@@ -22,11 +22,11 @@
   },
   "scripts": {
     "start": "react-scripts start --resolveJsonModule=true",
-    "build": "react-scripts build",
+    "build": "react-scripts build npm run build-storybook",
     "test": "react-scripts test --resolveJsonModule=true",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
+    "build-storybook": "build-storybook -o ./build/storybook -s public ",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
