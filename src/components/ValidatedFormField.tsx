@@ -2,7 +2,9 @@ import React from "react";
 import { IValidationRule } from "../utilities/regularExpressions/ValidatePartNumber.Regex";
 import { ValidationRule } from "./ValidationRule";
 
-type IValidateFormFieldProps<T extends string | number | readonly string[]> = {
+export type IValidateFormFieldProps<
+  T extends string | number | readonly string[]
+> = {
   value: T;
   id: string;
   setValue: (value) => void;
