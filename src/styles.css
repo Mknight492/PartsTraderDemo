@@ -6,3 +6,25 @@
   height: 1px;
   overflow: hidden;
 }
+
+.checkmark {
+  align-self: start;
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 25px;
+  width: 12px;
+  margin-left: 12px;
+  border-bottom: 7px solid #78b13f;
+  border-right: 7px solid #78b13f;
+}
+
+.cross {
+  align-self: start;
+  display: inline-block;
+  transform: rotate(45deg) translateX(-50%);
+  height: 25px;
+  width: 25px;
+  margin-left: 12px;
+  border-bottom: 7px solid #78b13f;
+  border-right: 7px solid #78b13f;
+}
